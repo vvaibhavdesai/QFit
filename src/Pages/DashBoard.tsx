@@ -155,7 +155,7 @@ export function DashBoard() {
         wordWrap="break-word"
         justifyContent="flex-start"
         color="#ffff"
-        bg="#83C3C3"
+        bg="#418282"
         className="setquiz"
         borderRadius="20px"
         onClick={() => {setUserAnswer([]); return console.log("This is dashboard",userAnswer) }}
