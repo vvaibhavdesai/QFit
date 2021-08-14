@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+.App {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  height: auto;
+  box-sizing: border-box;
+  /* background: #45377d; */
+  color: white;
+  background-image: linear-gradient(to bottom right, #291c58, #42347a);
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-custom {
+  margin: 1rem;
+  padding: 2rem;
+  max-width: 30rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.setquiz:hover {
+  background: #ffb7a5 !important;
+  color: #42347a;
+}
+.setquiz:active {
+  border: none;
+  outline: none;
+}
+
+.setquiz:focus {
+  box-shadow:none !important;
+  outline:0 !important
+}
+
+.score-board {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 0px;
+  border-radius: 50px 50px 80% 80%;
+}
+
+.glass-effect {
+  /* background: black; */
+  background: rgba(86, 69, 146, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-effect-2 {
+  padding: 1rem;
+  background: rgba(86, 69, 146, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-effect-nav {
+  background: rgba(86, 69, 146, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /* border-radius: 0 0 0 30px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bg {
+  animation: slide 10s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #554591 50%, #ffb7a5 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 10s;
+}
+
+.bg3 {
+  animation-duration: 10s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-50%);
+  }
+  25% {
+    transform: translateX(25%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
